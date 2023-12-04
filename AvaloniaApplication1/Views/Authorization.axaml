@@ -1,0 +1,66 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplication1.Views.Authorization"
+        Title="Авторизация">
+    
+        <Border
+        CornerRadius="20">
+        <ExperimentalAcrylicBorder>
+                
+            <Grid ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                  
+                </Grid.ColumnDefinitions>
+                
+                <TextBlock Grid.Column="1" Grid.ColumnSpan="2"
+                           Text="Авторизация"
+                           Foreground="White"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           FontSize="30"/>
+                <TextBox Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"
+                         Watermark="Логин"
+                         TextAlignment="Center"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         FontSize="25"
+                         />
+                <TextBox Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"
+                         Watermark="Пароль"
+                         PasswordChar="*"
+                         TextAlignment="Center"
+                         HorizontalAlignment="Stretch"
+                         VerticalAlignment="Center"
+                         FontSize="25"
+                />
+                
+                <Button Grid.Row="3" Grid.Column="1"
+                        Content="Войти"
+                        />
+                
+            </Grid>
+            
+            <ExperimentalAcrylicBorder.Material>
+                <ExperimentalAcrylicMaterial
+                    BackgroundSource="Digger"
+                    TintColor="Black"
+                    TintOpacity="1">
+                </ExperimentalAcrylicMaterial>
+            </ExperimentalAcrylicBorder.Material>
+        </ExperimentalAcrylicBorder>
+    </Border>
+        
+</Window>
